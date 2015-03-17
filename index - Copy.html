@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="animate.css">
+    <style>
+    #wrap{width: 960px; margin:0 auto;}
+      .row{position: relative;}
+        .fade{position:absolute;}
+          .top_img{position:absolute;top:0; right:0;}
+          .bottop_img{position:absolute;bottom:0;right:0}
+          .second-row-image{top:24%; right: 55px;}
+      
+    </style>
+  </head>
+  <body>
+  <div id="wrap">
+
+    <div class="row">
+      <img src="images/01.jpg" alt="" width="960" height="640">
+    </div>
+  
+    <div class="row">
+       <img src="images/fade_06.jpg" alt="" width="516" height="740" class="fl">
+       <img src="images/qq_01.jpg" alt="" width="444" height="598" class="wow fadeInUp top_img" data-wow-duration="2s">
+       <img src="images/fade_.jpg" alt="" width="479" height="333" class="fade second-row-image wow fadeInUp " data-wow-duration="2s">
+       <img src="images/qq_02.jpg" alt="" width="444" height="181" class="wow fadeInUp bottop_img" data-wow-duration="2s">
+    </div>
+
+    <div class="row">
+       <img src="images/fade_06.jpg" alt="" width="516" height="740" class="fl">
+       <img src="images/qq_01.jpg" alt="" width="444" height="598" class="wow fadeInUp top_img">
+       <img src="images/fade_.jpg" alt="" width="479" height="333" class="fade second-row-image wow fadeInUp ">
+       <img src="images/qq_02.jpg" alt="" width="444" height="181" class="wow fadeInUp bottop_img">
+    </div>
+
+  </div>
+  <script src="wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<div id="main" class="container">
+				<a name="main_anchor" id="main_anchor" tabindex="0"></a><!-- CMS PLACEHOLDER Field:MainStart END -->
+
+<style>
+/* full bleed content */
+#main {width: 100%;}
+#page {width: 100%; z-index:4;}
+.container {float: none;margin: 0 auto;}
+#navigation {margin: 0 auto;height: 30px;}
+#breadcrumb {display: none;}
+
+/* fullscreen HP width video instead of NEW IN slider */
+body{margin:0;padding:0;}
+#tiles{padding:0;}
+#home-container .new-in{margin-left:2px!important;position:relative;}
+#player-overlay{display:block; position: absolute;top:0; left:0; width: 100%; height:100%;}
+
+	#home-container .clearFix{clear: both; margin-bottom:10px;}
+/*Buttons*/
+	#home-container .shop-now{font:16px/34px 'FuturaBT-Light',Verdana,Arial,sans-serif; padding:6px 10px 2px;margin:0;background:#fff270;color:#000!important;display:inline;text-decoration:none;text-transform: uppercase; letter-spacing: 1px}
+	#home-container p, #home-container h1, #home-container h2, #home-container span{cursor: default;}
+	#home-container #tiles p,#home-container #tiles span{cursor: pointer;}
+	#topper {z-index:25;}
+	#home-container {width:960px;}
+	#home-container, #home-container p, #home-container a {font:14px/18px 'FuturaBT-Light',Verdana,Arial,sans-serif;color:#000;letter-spacing:0.05em;}
+	#home-container h3, #home-container h4, #home-container .banner {text-transform:uppercase;letter-spacing: 1px}
+	#home-container .banner {padding:10px 10px 8px;margin:10px 0 0;background:#f6f6f6;}
+	#home-container .banner, #home-container .new-in {text-align:center;}
+	#home-container .copy p {font-size:16px;line-height:18px;width:400px;margin:0 0 14px;}
+	#home-container .banner.yellow {background:#fdf25d;padding:15px 0 10px;font-size:23px;line-height:28px;}
+	#home-container .banner strong {font-family:'FuturaBT-Heavy','Arial Black',Arial,sans-serif;letter-spacing:0;}
+	#home-container h3 {font:38px/25px 'FuturaBT-Light',Verdana,Arial,sans-serif;margin:0;letter-spacing: 1px}
+	#home-container h3 {font:52px 'FuturaBT-Light',Verdana,Arial,sans-serif;color: #000;}
+	#home-container h3 strong {font-size:52px;line-height: 40px; color:#000; font-weight: bold;color:#000;display:block;}
+	#home-container .rotations h3 strong {margin:0px 0 16px;}
+	#home-container .rotations, #home-container .large-box, #home-container .new-in {margin:10px 0 0;}
+	#home-container .rotations {z-index:1;}
+	#home-container .rotations .slide, #home-container .large-box, #home-container .small-box {position:relative;}
+	#home-container .rotations .slide {width:960px;height:500px;}
+
+	#home-container .large-box h3, #home-container .new-in h4 {font:38px/38px 'FuturaBT-Light',Verdana,Arial,sans-serif; color:#000;letter-spacing: 1px}
+	#home-container .large-box h3 strong {font-size:38px; color:#000; font-weight: bold}
+	#home-container .large-box {width:638px;height:480px;}
+	#home-container .large-box .copy p {margin:8px 0 12px;width:255px; line-height:1.5em; font-size: 14px}
+	#home-container .large-box, #home-container .new-in, .thumbnails a#slide1, .thumbnails a#slide2, .thumbnails a#slide3, #home-container .small-box, .thumbnails a {display:inline-block;*display:inline;*zoom:1;vertical-align:top;}
+	
+	#home-container .new-in {width:310px;height:478px}
+	#home-container .new-in, #home-container .small-box.two {margin-left:5px;}
+	#home-container .new-in .new-in-products {margin:25px auto 35px;}
+	#home-container .new-in h4 {float:none!important;margin:20px 0 0; font-size: 27px; color: #A19695}
+	#home-container .new-in img {width:194px;height:312px;}
+
+	#tweetFeed {margin:10px 0 0;}
+	#prev, #next, .thumbnails, #home-container .copy {position:absolute;}
+	#prev, #next {text-indent:-99999px;height:48px;width:28px;top:-300px;}
+	#prev {background:url(http://www.karenmillen.com/pws/client/2013/Home/Rebrand/prev.png) no-repeat;left:-490px;}
+	#next {background:url(http://www.karenmillen.com/pws/client/2013/Home/Rebrand/next.png) no-repeat;right:-450px;}
+	.thumbnails {top:-50px;z-index:10;}
+	.thumbnails a {border:1px solid #fef270;height:12px;width:12px;margin:5px;text-indent:-99999px;}
+	.thumbnails a.activeSlide {background:#fef270;}
+	/* BACKGROUND IMAGES */
+	#home-container .rotations .slide.one, #home-container .rotations .slide.two, #home-container .rotations .slide.three, #home-container .rotations .slide.four,  {background:#f6f6f6}
+	
+	/* COPY POSITION */
+	#home-container .rotations .slide.one .copy {left:80px;top:120px;}
+	#home-container .rotations .slide.two .copy {left:80px;top:120px;}
+	#home-container .rotations .slide.three .copy {left:80px;top:120px;}
+	.slide img{position:absolute;}
+	#home-container .large-box .copy {right:40px;top:173px;}
+		#home-container .white.large-box .copy h3, #home-container .white.large-box .copy h3 strong, #home-container .white.large-box .copy p{color:white;}
+		#home-container .left-alignment.large-box .copy {left:80px;}
+		#home-container .center-alignment.large-box .copy {width:100%;left:0;bottom:20px; top:auto; text-align: center;}
+		#home-container .center-alignment.large-box .copy p{margin:8px auto 12px; width:350px;}
+	#home-container .small-box.one .copy {left:40px;top:60px;}
+	#home-container .small-box.two .copy {left:40px;top:60px;}
+  	#delivery {margin:10px 0px 10px;text-align:center;display:block;padding:12px 0 8px;font-family:'FuturaBT-Light', Arial, Arial, Helvetica, sans-serif;font-size:14px;text-transform:uppercase;color:#000;letter-spacing:0.05em;}
+		 #delivery strong {font-family:'FuturaBT-Heavy', Arial, Arial, Helvetica, sans-serif;}
+		 #delivery a {font-family:'FuturaBT-Heavy', Arial, Arial, Helvetica, sans-serif; text-decoration: none}
+		 #delivery a.underline {font-family:'FuturaBT-Light', Arial, Helvetica, sans-serif; text-decoration:underline; }
+		 #event {background:#f0f1ee;text-align:center;margin:10px 0px;font-family:'FuturaBT-Light', Arial, Arial, Helvetica, sans-serif;font-size:15px;text-transform:uppercase;color:#000;letter-spacing:0.05em;}
+		 #event strong {font-family:'FuturaBT-Heavy', Arial, Arial, Helvetica, sans-serif;}
+	#img-banner {display:block;margin:15px 0px;}
+
+	/*bottom tiles*/
+	#home-container #tiles li{float: left; margin-left:9px;}
+	#home-container #tiles li.first-tile{margin:0}
+	#home-container #tiles li a{display: inline-block;text-align: center;}
+	#home-container #tiles p{text-transform: uppercase; padding:0; margin:17px 0 22px; font-size:26px;}
+	#home-container #tiles .category{font:12px/20px 'FuturaBT-Heavy', Helvetica, Verdana, sans-serif; display: block;margin: 2px 0 5px; letter-spacing: 0px }
+	#home-container #tiles .multi-links {text-align: center;}
+	#home-container #tiles .multi-links span.gap {margin-right: 15px;}
+</style>
+<!--[if lt IE 9]>
+	<style>#home-container .center-alignment.large-box .copy {width:100%;left:0;top:283px; text-align: center;}</style>
+<![endif]-->
+
+<!-- 
+<script src="/pws/client/javascript/jquery.cycle.latestV.js"></script>
+<script>
+	$(function(){
+		$('.rotations').cycle({ speed:300,timeout:5000,pager:'.thumbnails',next:'#next',prev:'#prev' });
+		$('#slide1 span').click(function() { $('.thumbnails').cycle(0);return false; });
+		$('#slide2 span').click(function() { $('.thumbnails').cycle(1);return false; });
+		//$('#slide3 span').click(function() { $('.thumbnails').cycle(2);return false; });
+		$('.new-in-products').cycle();
+	});
+</script>-->
+
+<div id="home-container">
+<div id="img-banner">
+<div id="delivery"><a href="/delivery-page/content/fcp-content"><strong>FREE STANDARD DELIVERY ON ALL UK ORDERS OVER £150;</strong> automatically applied at checkout</a></div> 
+</div>
+
+
+<!-- //////////////////////////  Main Slider /////////-->
+	<div class="rotations" style="position: relative; width: 960px; height: 500px;">
+
+	<!-- Slide 1 -->
+    <div class="slide one" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 3; opacity: 1; width: 960px; height: 500px;">
+			<a href="/the-journey"><img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/guide-to-dressing-up.jpg" width="960" height="500" alt="GUIDE TO DRESSING UP"></a>
+			<!-- <div class="copy">
+				<h3>OUR GUIDE TO<strong>DRESSING UP</strong></h3>
+				<p>Our guide to this season’s new silhouettes.</p>
+				<a class="shop-now" href="/dressing-up/content/fcp-content">DISCOVER MORE</a>
+				
+			</div> -->
+		</div>
+
+
+	<!-- Slide 2 
+	<div class="slide two" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2; opacity: 0; width: 960px; height: 500px;">
+			<a href="/Lookbook-AW14-part1/content/fcp-content"><img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/lookbook-aw14.jpg" width="960" height="500" alt="AW14 LOOKBOOK"></a>
+			<div class="copy">
+				<h3>AW<strong>LOOKBOOK</strong></h3>
+				<p>Get ready for AW14 with our perfectly curated capsule wardrobe.</p>
+				<a class="shop-now" href="/Lookbook-AW14-part1/content/fcp-content">DISCOVER MORE</a>
+				
+			</div>
+		</div>
+-->
+
+	</div>
+
+	<!-- Slider UI elements-->
+		
+		<div id="controls">
+			<a href="#" id="prev">Prev</a>
+			<a href="#" id="next">Next</a>
+			<div class="thumbnails"><a href="#" class="activeSlide">1</a><a href="#" class="">2</a></div>
+		</div>
+
+
+<!-- ////////////////////////// Large box ////////// -->
+
+	<!-- The following <div> can use the following options which would need to be added to its class: [left-alignment, center-alignment], [white] --> 
+	<div class="large-box left-alignment">
+	<a href="/outerwear/dept/fcp-category/list"><img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/outerwear.jpg" width="638" height="561" alt="NEW IN"></a>
+			<div class="copy">
+				<h3>New in</h3>
+				<p> </p>
+				<a class="shop-now" href="/outerwear/dept/fcp-category/list">SHOP NOW</a>
+	        	</div>    
+                    
+	</div>
+
+
+<!-- //////////////////////////  WHAT'S NEW Widget //////// -->
+
+    <div class="new-in">
+<!-- Start of Brightcove Player -->
+
+<div style="display:none">
+
+</div>
+
+<!--
+By use of this code snippet, I agree to the Brightcove Publisher T and C 
+found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+-->
+
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<a href="#test" id="player-overlay"> </a>
+<object id="myExperience3726851206001" class="BrightcoveExperience">
+  <param name="bgcolor" value="#FFFFFF" />
+  <param name="width" value="314" />
+  <param name="height" value="561" />
+  <param name="playerID" value="3726888702001" />
+  <param name="playerKey" value="AQ~~,AAAAB42LRjE~,23Z_4QS37fLsByScUfc8Q6eC0q_F4VGV" />
+  <param name="isVid" value="true" />
+  <param name="isUI" value="true" />
+  <param name="dynamicStreaming" value="true" />
+  
+  <param name="@videoPlayer" value="3726851206001" />
+</object>
+
+<!-- 
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+-->
+<script type="text/javascript">brightcove.createExperiences();</script>
+
+<!-- End of Brightcove Player -->
+	</div>
+  <div class="clearFix"></div>
+
+<!-- //////////////////////////  Tiles //////// -->
+
+	<ul id="tiles">
+		<li class="first-tile">
+			<a href="/jeans/dept/fcp-category/list">
+				<img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/jeans.jpg" width="314" height="400" alt="FASHION STAPLE JEANS">
+				<p><span class="category">How to wear</span>red</p>
+				<span class="shop-now">DISCOVER MORE</span>
+			</a>
+		</li>
+		<li>
+			<a href="/the-new-dress/content/fcp-content">
+				<img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/new-dress.jpg" width="314" height="400" alt="THE NEW DRESS">
+				<p><span class="category">Our guide to</span>dressing up</p>
+				<span class="shop-now">DISCOVER MORE/span>
+			</a>
+		</li>
+		<li>
+			<a href="/t-shirts/dept/fcp-category/list">
+				<img src="http://www.karenmillen.com/pws/client/2014/Home/Wk24/Tues/luxe-t-shirt.jpg" width="314" height="400" alt="LUXE T-SHIRT">
+				<p><span class="category">NEW SEADON</span>dresses</p>
+				<span class="shop-now">SHOP NOW</span>
+			</a>
+		</li>
+		<div class="clearFix"></div>
+	</ul>
+
+    
+
+</div> <!-- Closing home-container -->
+
+
+
+
+
+<!-- CMS PLACEHOLDER Field:MainEnd END --></div>

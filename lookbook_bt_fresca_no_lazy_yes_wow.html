@@ -1,0 +1,853 @@
+﻿<div id="cms_content">
+<style>
+/* full bleed content */
+#main {width: 100%;}
+#page {width: 100%; z-index:4;}
+.container {float: none;margin: 0 auto;}
+#navigation {margin: 0 auto;height: 30px;}
+#breadcrumb {display: none;}
+
+/*  Lookbook AW14 - EN  */
+
+/*Amazon fixes*/
+
+#col a{font-size:22px!important}
+@font-face {
+	font-family: 'FuturaBT-Light';
+	src: url('/pws/client/style/webfonts/FuturaHeavy/eot/style_569.eot?#iefix') format('embedded-opentype'),
+		url('/pws/client/style/webfonts/FuturaHeavy/ttf/style_569.ttf') format('truetype'),
+		url('/pws/client/style/webfonts/FuturaHeavy/svg/style_569.svg#FuturaBT-Light') format('svg');
+}
+@font-face {
+	font-family: 'FuturaBT-Heavy';
+	src: url('/pws/client/webfonts/FuturaBT-Heavy/27A0C8_0_0.eot');
+	src: url('/pws/client/webfonts/FuturaBT-Heavy/27A0C8_0_0.eot?#iefix') format('embedded-opentype'),
+		url('/pws/client/webfonts/FuturaBT-Heavy/27A0C8_0_0.woff') format('woff'),
+		url('/pws/client/webfonts/FuturaBT-Heavy/27A0C8_0_0.ttf') format('truetype');
+}
+
+
+/* general styles */
+a {text-decoration: none;}
+p {color: #231F20 !important;}
+.left {float: left !important;}
+.right {float: right !important;}
+.shop-now{font:16px/14px 'FuturaBT-Light',Verdana,Arial,sans-serif; padding:6px 10px 2px;margin:0;background:#fff270;color:#000!important;display:inline;text-decoration:none;text-transform: uppercase; letter-spacing: 1px}
+.clearFix{clear: both; margin-bottom:30px; display: block;}
+.grey-line{background: #e9e7e4; display:block; height: 1px; margin:30px 0;}
+
+#lookbook {color: #000 !important; width: 960px; font-size: 16px; margin: 0 auto;}
+#lookbook ul{margin:0; padding:0; list-style: none}
+#lookbook img {	border:0; display: block;}
+
+
+/* intro section */
+#lookbook #intro { height:640px; color:#231F20 !important;}
+#lookbook #intro .textBlock {width: 50%; margin: 0 auto; text-align: center; display: block; margin-top: 70px;}
+#lookbook #intro .textBlock.left {float: left;}
+#lookbook #intro .textBlock.right {float: right;}
+#lookbook #intro a img { margin: 0 auto; display: block; margin-top: 30px;}
+#lookbook #intro p { font: 18px/1.35em 'FuturaBT-Light', Helvetica, Verdana, sans-serif; text-transform: uppercase; width: 350px; margin: 0 auto; margin-bottom: 20px; letter-spacing: 0.025em;}
+#lookbook #intro h1 {font:88px/1.1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif; color:#231F20 !important; text-transform:uppercase;margin-bottom: 15px; letter-spacing: 0.05em; }
+#lookbook #intro h1 strong {font-size:77px; line-height:1em; display:block; color: #fff;}
+#lookbook #intro h3 {font:24px 'FuturaBT-Heavy', Helvetica, Verdana, sans-serif; text-transform: uppercase; font-weight: bold; margin-bottom: 7px;}
+
+
+/* looks sections */
+#lookbook .block {height: 740px; width: 960px; display: block; margin: 0; position: relative; margin-bottom: 55px;}
+#lookbook .block .lookNumber {position: absolute;  font:68px/1.4em 'FuturaBT-Light', Helvetica, Verdana, sans-serif; color:#231F20 !important;}
+#lookbook .col.left .lookNumber {left: -90px;}
+#lookbook .col.right .lookNumber {right: -100px;}
+#lookbook .large-image {max-height: 740px;}
+#lookbook .col {position: relative; height: 740px; display: block; }
+#lookbook .col.details {width: 440px; text-align: center; margin: 0; height: 100%; }
+#lookbook .col.details .textBlock {width: 350px; margin: 0; padding: 0; position: absolute; left: 50%; margin-left: -175px;}
+#lookbook .col.details .textBlock:first-child { top: 30px;}
+#lookbook .col.details .textBlock:last-child { bottom: 40px;}
+#lookbook .col.details .textBlock h2 {font:28px 'FuturaBT-Light', Helvetica, Verdana, sans-serif; color:#231F20 !important; text-transform:uppercase; padding: 0;margin-bottom: 15px;margin-top: 0;}
+#lookbook .col.details .textBlock h4 {font:14px/18px 'FuturaBT-Heavy', Helvetica, Verdana, sans-serif; text-transform: uppercase; display: block; margin-bottom: 5px; float: none !important;}
+#lookbook .col.details .textBlock p,
+#lookbook .col.details .textBlock ul li  {font:16px/1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif; }
+#lookbook .col.details .textBlock ul li a {font-size: 14px; line-height: 20px; display: inline-block; color:#231F20 !important; text-transform: uppercase; text-decoration: underline; margin-bottom: 3px;}
+
+#lookbook .small-image {float: none; position: absolute; }
+#lookbook .small-image.active{border:1px solid black;}
+#lookbook .col.details.left .small-image {left: 0; z-index: 2}
+#lookbook .col.details.right .small-image {right: 0;}
+#lookbook .small-image.landscape {top: 50%; margin-top: -240px; position: absolute; z-index: 3;}
+#lookbook .small-image.portrait { position: relative; margin: 0 auto; top: 50%; margin-top: -330px;}
+
+/* tiles section */
+#lookbook #tiles {width: 100%; text-align: center; }
+#lookbook #tiles ul {display: inline; margin: 0 auto; margin-top: 30px;}
+#lookbook #tiles ul li {float: left; margin-left: 9px; color:#000!important;}
+#lookbook #tiles ul li.first-tile {margin:0}
+#lookbook #tiles ul li a {display: inline-block;text-align: center; color: #000;}
+#lookbook #tiles ul li p {font-family: 'FuturaBT-Light', Helvetica, Verdana, sans-serif; text-transform: uppercase; padding:0; margin:17px 0 22px; font-size:26px;}
+#lookbook #tiles ul li p .category {font:12px/20px 'FuturaBT-Heavy', Helvetica, Verdana, sans-serif!important; display: block;margin: 2px 0 5px; }
+#lookbook #tiles .shop-now { font-size:13px;padding:6px 10px 4px;}
+/* tolltip */
+.ttip{position:absolute; z-index:999; left:-9999px; background-color:#000; padding:5px;width:auto}
+.ttip p{margin:0; padding:0; color:#fff!important;padding:2px 7px;font:16px/1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif!important;}
+
+/* lookbook nav */
+.bt_hide{position:absolute;right:0; top:-32px;text-transform: uppercase; padding:10px 10px 6px; background: rgba(15,15,15,0.8);color:white; font:16px/1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif!important; cursor:pointer;}
+#lookbook_nav {position: fixed; bottom:0; width: 100%; background: rgba(15,15,15,0.8); z-index: 9999; margin:0; padding:0; transition: all .3s ease;-moz-transition: all .3s ease; -webkit-transition: all .3s ease; bottom:-300px; text-align:center;}
+#lookbook_nav li {width: 8.45%; height: auto;margin-right:0.45%; margin-left:-5px; margin-top:6px; margin-bottom:6px; display:inline-block;zoom:1; font-size: 0;}
+#lookbook_nav li img{width: 100%; height: auto}
+body{margin:0;}
+
+
+#wrapper {overflow: hidden}
+
+/* WOW */
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Video */
+#video-campaign {
+            width: 960px;
+            padding: 10px 0px;
+}
+#video-campaign h1 {
+            font: 40px/1.1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif;
+            color: #231F20 !important;
+            text-transform:uppercase;
+            text-align:center;
+}
+#video-campaign h2 {
+            font: 26px/1.1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif;
+            color: #231F20 !important;
+            text-transform:uppercase;
+            padding-bottom: 20px;
+            text-align:center;
+}
+#video-campaign h1 strong {
+            font: 45px/1.2em 'FuturaBT-Heavy', Helvetica, Verdana, sans-serif;
+            display:block;
+}
+#video-campaign p {
+            font: 16px/24px 'FuturaBT-Light', Helvetica, Verdana, sans-serif;
+            color: #231F20 !important;
+            margin: 30px 0px;
+}
+#video-campaign p.shop-now {
+            font: 13px/1em 'FuturaBT-Light', Helvetica, Verdana, sans-serif;
+            color:#000;
+            background:#FFF16E;
+            text-transform:uppercase;
+            padding:5px 9px 3px;
+            text-decoration:none;
+            display:inline;
+}
+#video-campaign a {
+                        font:14px/18px 'FuturaBT-Light',Verdana,Arial,sans-serif;
+                        color:#000;
+                        letter-spacing:0.05em;
+            }
+#video-campaign .video-holder {
+            padding: 20px;
+            background: #ebe9e5;
+}
+#video-campaign .product-picks {
+            float: left;
+            width: 200px;
+            padding:0px 20px;
+            text-align:center;
+}
+.copy {
+            width: 960px;
+            float:left;
+}
+
+</style>
+
+<!--[if lt IE 9]>
+	<style>
+    #lookbook .col.details .textBlock {top: 540px !important;}
+    .bt_hide, #lookbook_nav{background:#111; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";}
+    </style>
+<![endif]-->
+
+
+
+
+
+
+<ul id="lookbook_nav">
+ <span class="bt_hide">Hide</span>
+    <li style="margin-left:0.5%;"><a href="#look_1" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-01-large.jpg" alt=""></a></li>
+    <li><a href="#look_2" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-02-large.jpg" alt=""></a></li>
+    <li><a href="#look_3" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-03-large.jpg" alt=""></a></li>
+    <li><a href="#look_4" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-04-large.jpg" alt=""></a></li>
+    <li><a href="#look_5" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-05-large.jpg" alt=""></a></li>
+    <li><a href="#look_6" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-06-large.jpg" alt=""></a></li>
+    <li><a href="#look_7" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-07-large.jpg" alt=""></a></li>
+    <li><a href="#look_8" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/blue-dress-large.jpg" alt=""></a></li>
+    <li><a href="#look_9" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-09-large.jpg" alt=""></a></li>
+    <li><a href="#look_10" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/look-10-large.jpg" alt=""></a></li>
+    <li><a href="#look_11" class="smooth_scroll"><img width="124" height="178" src="/pws/client/2014/Content/lookbook-aw14/back-sleeveless-knit-large.jpg" alt=""></a></li>
+</ul>
+
+<div id="video-campaign">
+  <div class="video-holder"> <script language="JavaScript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>
+    <object id="myExperience3526823624001" class="BrightcoveExperience">
+      <param name="bgcolor" value="#FFFFFF" />
+      <param name="width" value="920" />
+      <param name="height" value="518" />
+      <param name="playerID" value="3714957581001" />
+      <param name="playerKey" value="AQ~~,AAAAB42LRjE~,23Z_4QS37fKvDRHq4PKiAHNfI2SAvdNv" />
+      <param name="isVid" value="true" />
+      <param name="isUI" value="true" />
+      <param name="dynamicStreaming" value="true" />
+      <param name="@videoPlayer" value="3526823624001" />
+    </object>
+  </div>
+
+<script type="text/javascript">
+	/*! WOW - v1.0.0 - 2014-07-30
+* Copyright (c) 2014 Matthieu Aussaguel; Licensed MIT */(function(){var a,b,c,d=function(a,b){return function(){return a.apply(b,arguments)}},e=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){console.warn("MutationObserver is not supported by your browser."),console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),this.WOW=function(){function f(a){null==a&&(a={}),this.scrollCallback=d(this.scrollCallback,this),this.scrollHandler=d(this.scrollHandler,this),this.start=d(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),this.animationNameCache=new c}return f.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0},f.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():document.addEventListener("DOMContentLoaded",this.start),this.finished=[]},f.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.getElementsByClassName(this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else{for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);window.addEventListener("scroll",this.scrollHandler,!1),window.addEventListener("resize",this.scrollHandler,!1),this.interval=setInterval(this.scrollCallback,50)}return this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],e=0,f=b.length;f>e;e++)d=b[e],g.push(function(){var a,b,e,f;for(e=d.addedNodes||[],f=[],a=0,b=e.length;b>a;a++)c=e[a],f.push(this.doSync(c));return f}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},f.prototype.stop=function(){return this.stopped=!0,window.removeEventListener("scroll",this.scrollHandler,!1),window.removeEventListener("resize",this.scrollHandler,!1),null!=this.interval?clearInterval(this.interval):void 0},f.prototype.sync=function(){return a.notSupported?this.doSync(this.element):void 0},f.prototype.doSync=function(a){var b,c,d,f,g;if(!this.stopped){if(null==a&&(a=this.element),1!==a.nodeType)return;for(a=a.parentNode||a,f=a.getElementsByClassName(this.config.boxClass),g=[],c=0,d=f.length;d>c;c++)b=f[c],e.call(this.all,b)<0?(this.applyStyle(b,!0),this.boxes.push(b),this.all.push(b),g.push(this.scrolled=!0)):g.push(void 0);return g}},f.prototype.show=function(a){return this.applyStyle(a),a.className=""+a.className+" "+this.config.animateClass},f.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},f.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),f.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.setAttribute("style","visibility: visible;"));return e},f.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},f.prototype.vendors=["moz","webkit"],f.prototype.vendorSet=function(a,b){var c,d,e,f;f=[];for(c in b)d=b[c],a[""+c]=d,f.push(function(){var b,f,g,h;for(g=this.vendors,h=[],b=0,f=g.length;f>b;b++)e=g[b],h.push(a[""+e+c.charAt(0).toUpperCase()+c.substr(1)]=d);return h}.call(this));return f},f.prototype.vendorCSS=function(a,b){var c,d,e,f,g,h;for(d=window.getComputedStyle(a),c=d.getPropertyCSSValue(b),h=this.vendors,f=0,g=h.length;g>f;f++)e=h[f],c=c||d.getPropertyCSSValue("-"+e+"-"+b);return c},f.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=window.getComputedStyle(a).getPropertyValue("animation-name")}return"none"===b?"":b},f.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},f.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},f.prototype.scrollHandler=function(){return this.scrolled=!0},f.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},f.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},f.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+Math.min(this.element.clientHeight,innerHeight)-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},f.prototype.util=function(){return null!=this._util?this._util:this._util=new b},f.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},f}()}).call(this);
+</script>
+<script type="text/javascript"> 
+var isiPad = navigator.userAgent.match(/iPad/i) != null;
+console.log('is iPad?: '+isiPad);
+if (!isiPad){
+	new WOW().init();
+	}
+</script>
+
+<div id="wrapper">
+<div id="lookbook">
+
+<!-- ################################### intro  ####### -->
+<div class="block" id="intro" style="background-image: url('/pws/client/2014/Content/lookbook-aw14/lookbook-intro.jpg');">
+    <div class="textBlock left">
+        <h1>AW14</h1>
+        <p>For part one of our AW14 lookbook, we have created a perfectly curated capsule wardrobe. From luxe knitwear to directional dresses, each piece has been beautifully designed, crafted and fitted in our London atelier.</p>  
+        <a href="#look_1" class="smooth_scroll"><img src="/pws/client/2014/Content/lookbook-aw14/lookbook-arrow.png" /></a>
+    </div>
+</div>
+<div class="clearFix"></div>
+
+<!-- ################################### look 1 ####### -->
+<div class="block look" id="look_1">    
+
+    <div class="col left">
+          <div class="lookNumber">01</div>
+          <img width="516" height="740" src="/pws/client/2014/Content/lookbook-aw14/look-01-large.jpg" alt="COLOUR POP" class="large-image " usemap="#imgmap2014731154443"/>
+    </div>
+   <map id="imgmap2014731154443" name="imgmap2014731154443"><area shape="poly" coords="187,700,173,679,170,665,173,654,174,649,177,643,179,622,169,621,164,609,164,598,167,596,175,598,191,588,206,599,212,634,204,660,196,702" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" /><area shape="poly" coords="334,426,335,406,333,370,323,335,317,315,313,298,294,221,296,185,312,151,304,122,362,126,380,163,409,244,413,310,389,350,386,389,386,424" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+     <area title="" alt="Coco Shirt" coords="588,688,872,774" shape="rect" href="/coco-shirt-caviar-black.htm" target="_blank">
+     <area shape="poly" coords="258,158,272,161,304,135,311,150,294,186,293,222,310,298,334,366,335,413,334,430,375,429,373,450,235,459,240,418,234,367,271,248,266,210,254,188,243,130" href="/woven-stripe-dress/karenmillen/fcp-product/101DT00474 " target="_blank" alt="BLACK AND ORANGE STRIPED DRESS" />
+     <area shape="poly" coords="215,463,212,428,197,385,189,349,204,330,195,314,206,306,196,288,207,274,207,191,243,132,253,190,267,218,270,249,234,365,239,415,236,466" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+     <area shape="poly" coords="260,709,267,672,293,671,304,718,290,729,264,721" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+   </map>
+    <div class="col right details">
+          <div class="textBlock"></div>
+          <img src="/pws/client/2014/Content/lookbook-aw14/look-01-small.jpg" alt="COLOUR POP" border="0" usemap="#imgmap2014731154443Map" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map id="imgmap2014731154443Map" name="imgmap2014731154443Map">
+              <area shape="poly" coords="148,114,161,118,172,112,175,122,179,117,178,153,198,227,219,297,226,338,210,340,163,343,160,346,164,321,162,288,163,256,168,170,157,132,141,111" href="/woven-stripe-dress/karenmillen/fcp-product/101DT00474 " target="_blank" alt="BLACK AND ORANGE STRIPED DRESS" />
+              <area shape="poly" coords="120,88" href="#" />
+              <area shape="poly" coords="120,88,78,114,73,147,43,200,69,258,65,335,156,350,163,317,160,272,168,169,156,132,134,99" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+              <area shape="poly" coords="171,97,205,128,194,145,213,228,227,255,224,269,220,276,239,336,226,339,217,283,199,229,178,156,179,116" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>COLOUR POP</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">COAT (COMING SOON)</a></li>
+                    <li><a href="/woven-stripe-dress/karenmillen/fcp-product/101DT00474 ">BLACK AND ORANGE STRIPED DRESS</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BROGUES (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+          </div>
+    </div>
+</div>
+
+<div class="clearFix"></div>
+
+
+
+
+<!-- ################################### look 2 ####### -->
+<div class="block look" id="look_2">
+        
+        <div class="col details left">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-02-small.jpg" alt="THE NEW TRENCH " border="0" usemap="#Map15" class="small-image wow fadeInUp  landscape" data-wow-duration="2s"/>
+            <map name="Map15" id="Map15">
+              <area shape="rect" coords="33,5,415,353" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>the new trench</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">TRENCH COAT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col right">
+          <div class="lookNumber">02</div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-02-large.jpg" alt="THE NEW TRENCH " width="516" height="740" border="0" usemap="#Map13" class="large-image">
+            <map name="Map13" id="Map13">
+              <area shape="rect" coords="169,157,420,555" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+        </div>  
+</div>
+    
+<div class="clearFix"></div>
+
+<!-- ################################### look 3 ####### -->
+<div class="block look" id="look_3">    
+
+    <div class="col left">
+          <div class="lookNumber">03</div>
+           <img src="/pws/client/2014/Content/lookbook-aw14/look-03-large.jpg" alt="CONTEMPORARY MINIMALISM" width="516" height="740" border="0" usemap="#Map" class="large-image " />
+           <map name="Map" id="Map">
+             <area shape="poly" coords="245,127,205,126,194,134,170,307,164,329,183,353,204,341,211,368,209,393,194,385,175,375,163,486,176,505,183,475,301,490,311,514,312,542,332,513,322,385,341,386,325,171,291,148,292,129,265,149,255,127" href="/soft-and-fluid-shirt-dress/karenmillen/fcp-product/103DT08394" target="_blank" alt="RELAXED POCKETY STYLE SHIRT DRESS" />
+             <area shape="poly" coords="182,482,162,554,157,639,154,718,191,722,194,622,228,480,185,475" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+             <area shape="poly" coords="262,488,273,634,262,712,277,727,299,710,310,537,307,506,299,489" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+    </div>
+   
+    <div class="col right details">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-03-small.jpg" alt="CONTEMPORARY MINIMALISM" border="0" usemap="#Map2" class="small-image wow fadeInUp  landscape" data-wow-duration="2s"/>
+            <map name="Map2" id="Map2">
+              <area shape="poly" coords="403,116,439,86,473,120,495,178,505,224,512,264,500,285,486,284,493,355,348,356,365,294,364,264,374,262,377,229,360,224,355,197,368,169,364,133,380,117" href="/soft-and-fluid-shirt-dress/karenmillen/fcp-product/103DT08394" target="_blank" alt="RED SHIRT DRESS" />
+          </map>
+            <div class="textBlock">
+              <h2>Contemporary Minimalism</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/soft-and-fluid-shirt-dress/karenmillen/fcp-product/103DT08394 ">RELAXED POCKETY STYLE SHIRT DRESS</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<div class="clearFix"></div>
+
+<!-- ################################### look 4 ####### -->
+<div class="block look" id="look_4">
+        
+        <div class="col details left">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-04-small.jpg" alt="OFF-DUTY ESSENTIALS " border="0" usemap="#Map3Map" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map3Map" id="Map3Map"><area shape="poly" coords="280,255,286,337,263,356,270,432,239,434,247,411,246,364,242,345,239,321,231,269,222,211,225,133,286,180" href="/signature-leather-biker-jacket/karenmillen/fcp-product/026JT07001  " target="_self" alt="BLACK LIMITED EDITION SIGNATURE LEATHER BIKER JACKET" />
+              <area shape="poly" coords="138,119,134,143,109,238,105,423,74,425,62,399,81,355,77,336,49,308,49,264,61,207,57,158,89,132" href="/signature-leather-biker-jacket/karenmillen/fcp-product/026JT07001  " target="_self" alt="BLACK LIMITED EDITION SIGNATURE LEATHER BIKER JACKET" />
+          </map>
+            <div class="textBlock">
+              <h2>OFF-DUTY ESSENTIALS </h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/signature-leather-biker-jacket/karenmillen/fcp-product/026JT07001 ">BLACK LIMITED EDITION SIGNATURE LEATHER BIKER JACKET</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">JEANS (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">KNIT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col right">
+          <div class="lookNumber">04</div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-04-large.jpg" alt="OFF-DUTY ESSENTIALS " width="516" height="740" border="0" usemap="#Map3" class="large-image">
+            <map name="Map3" id="Map3"><area shape="poly" coords="331,160,335,204,341,268,339,316,337,355,333,350,314,340,304,318,297,295,282,258,278,197,290,148,317,148" href="/signature-leather-biker-jacket/karenmillen/fcp-product/026JT07001  " target="_self" alt="BLACK LIMITED EDITION SIGNATURE LEATHER BIKER JACKET" />
+              <area shape="poly" coords="247,119,243,143,263,203,262,249,233,316,190,297,192,331,169,354,162,333,163,266,170,207,184,156,198,132" href="/signature-leather-biker-jacket/karenmillen/fcp-product/026JT07001  " target="_self" alt="BLACK LIMITED EDITION SIGNATURE LEATHER BIKER JACKET" />
+              <area shape="poly" coords="175,667,176,593,184,498,172,443,175,352,193,329,191,297,230,315,262,251,262,199,244,143,288,149,276,196,279,258,312,337,325,364,325,432,331,482,328,499,337,609,344,617,334,673,324,689,304,701,295,676,308,634,307,612,244,409,229,511,209,599,202,610,206,631,205,677,193,696,178,683" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+        </div>  
+</div>
+    
+<div class="clearFix"></div>
+
+<!-- ################################### look 5 ####### -->
+<div class="block look" id="look_5">    
+
+    <div class="col left">
+          <div class="lookNumber">05</div>
+           <img src="/pws/client/2014/Content/lookbook-aw14/look-05-large.jpg" alt="POWER FLORALS" width="516" height="740" border="0" usemap="#Map14" class="large-image " />
+           <map name="Map14" id="Map14">
+             <area shape="poly" coords="267,388" href="#" />
+             <area shape="rect" coords="160,134,360,707" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+    </div>
+   
+    <div class="col right details">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-05-small.jpg" alt="POWER FLORALS" border="0" usemap="#Map16" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map16" id="Map16">
+              <area shape="rect" coords="55,5,306,419" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>Power Florals</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">JEANS (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">COAT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">KAGOOL (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BAG (COMING SOON)</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<div class="clearFix"></div>
+
+<!-- ################################### look 6 ####### -->
+<div class="block look" id="look_6">
+        
+        <div class="col details left">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-06-small.jpg" alt="TEXTURE CLASH  " border="0" usemap="#Map4" class="small-image wow fadeInUp  landscape" data-wow-duration="2s"/>
+            <map name="Map4" id="Map4"><area shape="poly" coords="217,124,225,188,225,223,228,290,232,345,222,349,210,322,210,267,214,178" href="/colour-block-leather-bomber/karenmillen/fcp-product/026JT05802" target="_self" alt="TAN AND BLACK COLOURBLOCK LEATHER BOMBER" />
+              <area shape="poly" coords="58,131,72,171,76,224,64,279,67,313,50,335,38,308,38,253,45,173" href="/colour-block-leather-bomber/karenmillen/fcp-product/026JT05802" target="_self" alt="TAN AND BLACK COLOURBLOCK LEATHER BOMBER" />
+              <area shape="poly" coords="59,125,92,98,133,113,146,107,142,82,223,106,216,128,210,321,226,357,56,355,69,320,63,281,75,227,71,171" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>texture clash</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/colour-block-leather-bomber/karenmillen/fcp-product/026JT05802">TAN AND BLACK COLOURBLOCK LEATHER BOMBER</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">GILET (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">SKIRT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col right">
+          <div class="lookNumber">06</div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-06-large.jpg" alt="TEXTURE CLASH  " width="516" height="740" border="0" usemap="#Map4Map" class="large-image">
+            <map name="Map4Map" id="Map4Map">
+              <area shape="poly" coords="338,135,346,199,346,234,349,301,348,348,343,360,331,333,331,278,335,189" href="/colour-block-leather-bomber/karenmillen/fcp-product/026JT05802" target="_self" alt="TAN AND BLACK COLOURBLOCK LEATHER BOMBER" />
+              <area shape="poly" coords="200,155,214,195,218,248,209,310,193,316,196,334,186,314,180,277,187,197" href="/colour-block-leather-bomber/karenmillen/fcp-product/026JT05802" target="_self" alt="TAN AND BLACK COLOURBLOCK LEATHER BOMBER" />
+              <area shape="poly" coords="210,316" href="#" />
+              <area shape="poly" coords="210,325,163,511,295,535,391,513,341,374,342,361,324,330" href="file:///Hard Drive/Users/josephineleu/Library/Caches/TemporaryItems/ /faux-leather-hem-skirt/karenmillen/fcp-product/062ST02101" target="_self" alt="BLACK FASHION LONGER LENGTH SKIRT" />
+              <area shape="poly" coords="204,140,229,130,276,136,272,113,336,134,332,331,211,324,216,253,213,195" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+              <area shape="poly" coords="336,541,330,528,374,517,363,633,369,675,387,685,380,700,344,689,332,659,327,694,319,686,321,657,317,638,332,616,334,541,330,537,216,521,233,621,249,691,276,703,286,692,266,635,259,583,260,533,260,527" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+        </div>  
+</div>
+    
+<div class="clearFix"></div>
+
+<!-- ################################### look 7 ####### -->
+<div class="block look" id="look_7">    
+
+    <div class="col left">
+          <div class="lookNumber">07</div>
+           <img src="/pws/client/2014/Content/lookbook-aw14/look-07-large.jpg" alt="THE NEW PROPORTION" width="516" height="740" border="0" usemap="#Map5" class="large-image " />
+           <map name="Map5" id="Map5"><area shape="poly" coords="315,644,303,688,323,693,336,684,340,645" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+             <area shape="poly" coords="276,146,246,155,225,376,252,370,252,388,249,412,389,419,389,376,412,381,397,226,390,163,373,153,346,142,317,160,304,144" href="/classic-investment-coat/karenmillen/fcp-product/011CT01801 " target="_blank" alt="CLASSIC INVESTMENT COAT" />
+             <area shape="poly" coords="176,630,164,690,184,695,197,686,201,640" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+             <area shape="poly" coords="238,411,164,626,220,649,314,644,344,647,347,654,413,631,395,418" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+    </div>
+   
+    <div class="col right details">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-07-small.jpg" alt="THE NEW PROPORTION" border="0" usemap="#Map5Map" class="small-image wow fadeInUp  landscape" data-wow-duration="2s"/>
+            <map name="Map5Map" id="Map5Map">
+              <area shape="poly" coords="297,143,276,157,252,284,255,293,253,302,245,355,489,359,477,297,473,267,465,167,441,152,404,121,364,155,344,121,325,132" href="/classic-investment-coat/karenmillen/fcp-product/011CT01801 " target="_self" alt="CLASSIC INVESTMENT COAT" />
+          </map>
+            <div class="textBlock">
+              <h2>the new proportion</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/classic-investment-coat/karenmillen/fcp-product/011CT01801 ">BLACK CLASSIC INVESTMENT COAT</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">SKIRT (COMING SOON)</a></li>
+                    <li><a href="/lace-&-suede-shoe-boot/karenmillen/fcp-product/204FT20401">BLACK LACE AND SUEDE SHOE BOOT</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<div class="clearFix"></div>
+
+<!-- ################################### look 8 ####### -->
+<div class="block look" id="look_8">
+        
+        <div class="col details left">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/blue-dress-small.jpg" alt="Directional Dresses" border="0" usemap="#Map7" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map7" id="Map7">
+              <area shape="poly" coords="5,254,66,185,160,212,203,211,239,237,219,363,195,431,3,432" href="/60's-shift-dress//karenmillen/fcp-product/101DT03410" target="_self" alt="BLUE SIXTIES SHIFT DRESS" />
+          </map>
+            <div class="textBlock">
+              <h2>Directional Dresses</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/60's-shift-dress//karenmillen/fcp-product/101DT03410">BLUE SIXTIES SHIFT DRESS</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BROGUES (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col right">
+          <div class="lookNumber">08</div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/blue-dress-large.jpg" alt="Directional Dresses" width="516" height="740" border="0" usemap="#Map6" class="large-image">
+            <map name="Map6" id="Map6">
+              <area shape="poly" coords="216,160,239,139,295,125,314,129,334,211,334,246,356,434,193,432,233,257" href="/60's-shift-dress//karenmillen/fcp-product/101DT03410" target="_self" alt="BLUE SIXTIES SHIFT DRESS" />
+              <area shape="rect" coords="247,648,324,726" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+        </div>  
+</div>
+    
+<div class="clearFix"></div>
+
+<!-- ################################### look 9 ####### -->
+<div class="block look" id="look_9">
+
+    <div class="col left">
+          <div class="lookNumber">09</div>
+           <img src="/pws/client/2014/Content/lookbook-aw14/look-09-large.jpg" alt="leather and lace" width="516" height="740" border="0" usemap="#Map8" class="large-image " />
+           <map name="Map8" id="Map8"><area shape="poly" coords="294,616,323,619,325,634,330,655,319,694,317,668,299,702,257,704,256,690,274,675" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+             <area shape="poly" coords="164,600,197,602,197,615,204,631,197,670,192,643,173,669,138,684,137,670,155,655" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+             <area shape="rect" coords="193,153,342,514" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+    </div>
+   
+    <div class="col right details">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-09-small.jpg" alt="leather and lace" border="0" usemap="#Map9" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map9" id="Map9"><area shape="poly" coords="249,283,294,279,300,295,307,323,294,345,287,383,286,344,274,363,266,389,208,396,207,379,231,356" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+              <area shape="poly" coords="80,255,121,254,124,271,133,293,122,318,118,355,117,316,96,330,81,363,39,368,38,351,62,328" href="/lace-&amp;-suede-shoe-boot/karenmillen/fcp-product/204FT20401" target="_self" alt="BLACK LACE AND SUEDE SHOE BOOT" />
+              <area shape="rect" coords="109,4,310,129" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>leather and lace</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">LEATHER JACKET (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">TOP (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">SKIRT (COMING SOON)</a></li>
+                    <li><a href="/lace-&-suede-shoe-boot/karenmillen/fcp-product/204FT20401">BLACK LACE AND SUEDE SHOE BOOT</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+          </div>
+    </div>
+</div>
+
+<div class="clearFix"></div>
+
+<!-- ################################### look 10 ####### -->
+
+<div class="block look" id="look_10">
+        
+        <div class="col details left">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-10-small.jpg" alt="the signature tux" border="0" usemap="#Map10" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map10" id="Map10">
+              <area shape="poly" coords="191,161,117,192,74,364,136,433,175,388,135,350,146,294,169,361,173,388,245,369,220,230" href="/modern-tuxedo-jacket/karenmillen/fcp-product/021JT03001" target="_blank" alt="BLACK TUEXDO JACKET" />
+              <area shape="poly" coords="262,154,256,195,277,332,310,373,304,428,324,428,333,420,333,185" href="/modern-tuxedo-jacket/karenmillen/fcp-product/021JT03001" target="_blank" alt="BLACK TUEXDO JACKET" />
+              <area shape="rect" coords="236,244,237,246" href="#" />
+              <area shape="poly" coords="191,169,234,198,256,161,274,331,305,372,302,429,251,429,243,365,218,233" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+            </map>
+            <div class="textBlock">
+              <h2>the signature tux</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/modern-tuxedo-jacket/karenmillen/fcp-product/021JT03001">BLACK TUEXDO JACKET</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">SHIRT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">TROUSER (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+          </div>
+        </div>
+
+        <div class="col right">
+          <div class="lookNumber">10</div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/look-10-large.jpg" alt="the signature tux" width="516" height="740" border="0" usemap="#Map10Map" class="large-image">
+            <map name="Map10Map" id="Map10Map">
+              <area shape="poly" coords="293,127,241,134,214,354,270,356,313,351,327,374,353,369,377,368,374,171,334,142,315,246" href="/modern-tuxedo-jacket/karenmillen/fcp-product/021JT03001" target="_blank" alt="BLACK TUEXDO JACKET" />
+              <area shape="poly" coords="223,358,221,498,196,566,179,696,227,704,295,399,280,668,293,701,332,687,372,370,325,376,313,349" href="/modern-tuxedo-trouser/karenmillen/fcp-product/041PT04001 " target="_self" alt="MID HEEL LEATHER &amp; SUEDE POINT BOOT" />
+              <area shape="poly" coords="298,137,330,140,315,245" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+        </div>  
+</div>
+    
+<div class="clearFix"></div>
+
+<!-- ################################### look 11 ####### -->
+<div class="block look" id="look_11">  
+
+    <div class="col left">
+          <div class="lookNumber">09</div>
+           <img src="/pws/client/2014/Content/lookbook-aw14/back-sleeveless-knit-large.jpg" alt="THE NEW PROPORTION" width="516" height="740" border="0" usemap="#Map11" class="large-image " />
+           <map name="Map11" id="Map11"><area shape="poly" coords="124,551,107,649,138,651,165,559" href="/modern-tuxedo-trouser/karenmillen/fcp-product/041PT04001 " target="_self" alt="BLACK TUXEDO TROUSER" /><area shape="poly" coords="274,136,315,167,296,297,307,377,303,527,273,523,276,467,272,373,273,305,262,273" href="/sleeveless-knit-top/karenmillen/fcp-product/113KT21601" target="_self" alt="GREY SLEEVELESS COAT" />
+             <area shape="poly" coords="186,135,239,133,226,265,216,287,196,502,184,503,177,448,159,444,152,397,163,338" href="/sleeveless-knit-top/karenmillen/fcp-product/113KT21601" target="_self" alt="GREY SLEEVELESS COAT" />
+             <area shape="poly" coords="243,516,249,658,277,656,292,528" href="/modern-tuxedo-trouser/karenmillen/fcp-product/041PT04001 " target="_self" alt="BLACK TUXEDO TROUSER" />
+             <area shape="rect" coords="100,650,142,724" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+             <area shape="rect" coords="224,659,277,743" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+             <area shape="poly" coords="239,125,272,138,260,277,274,306,273,522,196,506,213,286,228,265" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+    </div>
+   
+    <div class="col right details">
+          <div class="textBlock"></div>
+            <img src="/pws/client/2014/Content/lookbook-aw14/back-sleeveless-knit-small.jpg" alt="THE NEW PROPORTION" border="0" usemap="#Map12" class="small-image wow fadeInUp  portrait" data-wow-duration="2s"/>
+            <map name="Map12" id="Map12"><area shape="poly" coords="380,338,405,247,422,262,512,358,381,358" href="/sleeveless-knit-top/karenmillen/fcp-product/113KT21601" target="_self" alt="GREY SLEEVELESS COAT&lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;&lt;a&gt;BLACK TUXEDO TROUSER" />
+              <area shape="poly" coords="124,253,233,234,276,271,273,357,122,356" href="/sleeveless-knit-top/karenmillen/fcp-product/113KT21601" target="_self" alt="GREY SLEEVELESS COAT&lt;/a&gt;&lt;/li&gt;                     &lt;li&gt;&lt;a&gt;BLACK TUXEDO TROUSER" />
+              <area shape="poly" coords="234,232,270,223,291,256,320,251,380,275,389,241,402,249,378,338,380,358,273,357,276,273" href="/AWlookbook-part1-signup/content/fcp-content" alt="COMING SOON" />
+          </map>
+            <div class="textBlock">
+              <h2>THE NEW PROPORTION</h2>
+                <h4>Shop the look</h4>
+                <ul>
+                    <li><a href="/sleeveless-knit-top/karenmillen/fcp-product/113KT21601">BLACK SLEEVELESS KNIT</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">COAT (COMING SOON)</a></li>
+                    <li><a href="/modern-tuxedo-trouser/karenmillen/fcp-product/041PT04001
+">BLACK TUXEDO TROUSER </a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BOOT (COMING SOON)</a></li>
+                    <li><a href="/AWlookbook-part1-signup/content/fcp-content">BAG (COMING SOON)</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+
+<div class="grey-line"></div>
+<!-- ################################### Tiles ####### -->
+ <div id="tiles">
+    <ul>
+        <li class="first-tile">
+            <a href="/modern-mod/content/fcp-content">
+                <img src="/pws/client/2014/Content/lookbook-aw14/modern-mod.jpg" width="314" height="400" alt="graphic pattern trend" />
+                <p><span class="category">Trend Focus</span>Modern Mod</p>
+                <span class="shop-now">Discover more</span>
+            </a>
+        </li>
+        <li>
+            <a href="/the-new-dress/content/fcp-content">
+                <img src="http://www.karenmillen.com/pws/client/2014/Content/lookbook-aw14/new-dress.jpg" width="314" height="400" alt="KM social" />
+                <p><span class="category">how to wear</span>the new dress</p>
+                <span class="shop-now">Discover more</span>
+            </a>
+        </li>
+        <li>
+            <a href="/graphic-pattern/content/fcp-content">
+                <img src="/pws/client/2014/Content/lookbook-aw14/graphic-pattern.jpg" width="314" height="400" alt="T shirts and jeans" />
+                <p><span class="category">trend focus</span>Graphic patterns</p>
+                <span class="shop-now">Discover more</span>
+            </a>
+        </li>
+        
+    </ul>
+    </div>
+ </div>
+ <br />
+<div class="clearFix"></div>
+
+</div><!-- end lookbook div -->
+</div><!-- end wrapper -->
+
+<script type="text/javascript">
+    // Generated by CoffeeScript 1.6.2
+/*!
+jQuery Waypoints - v2.0.5
+Copyright (c) 2011-2014 Caleb Troughton
+Licensed under the MIT license.
+https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
+*/
+(function(){var t=[].indexOf||function(t){for(var e=0,n=this.length;e<n;e++){if(e in this&&this[e]===t)return e}return-1},e=[].slice;(function(t,e){if(typeof define==="function"&&define.amd){return define("waypoints",["jquery"],function(n){return e(n,t)})}else{return e(t.jQuery,t)}})(window,function(n,r){var i,o,l,s,f,u,c,a,h,d,p,y,v,w,g,m;i=n(r);a=t.call(r,"ontouchstart")>=0;s={horizontal:{},vertical:{}};f=1;c={};u="waypoints-context-id";p="resize.waypoints";y="scroll.waypoints";v=1;w="waypoints-waypoint-ids";g="waypoint";m="waypoints";o=function(){function t(t){var e=this;this.$element=t;this.element=t[0];this.didResize=false;this.didScroll=false;this.id="context"+f++;this.oldScroll={x:t.scrollLeft(),y:t.scrollTop()};this.waypoints={horizontal:{},vertical:{}};this.element[u]=this.id;c[this.id]=this;t.bind(y,function(){var t;if(!(e.didScroll||a)){e.didScroll=true;t=function(){e.doScroll();return e.didScroll=false};return r.setTimeout(t,n[m].settings.scrollThrottle)}});t.bind(p,function(){var t;if(!e.didResize){e.didResize=true;t=function(){n[m]("refresh");return e.didResize=false};return r.setTimeout(t,n[m].settings.resizeThrottle)}})}t.prototype.doScroll=function(){var t,e=this;t={horizontal:{newScroll:this.$element.scrollLeft(),oldScroll:this.oldScroll.x,forward:"right",backward:"left"},vertical:{newScroll:this.$element.scrollTop(),oldScroll:this.oldScroll.y,forward:"down",backward:"up"}};if(a&&(!t.vertical.oldScroll||!t.vertical.newScroll)){n[m]("refresh")}n.each(t,function(t,r){var i,o,l;l=[];o=r.newScroll>r.oldScroll;i=o?r.forward:r.backward;n.each(e.waypoints[t],function(t,e){var n,i;if(r.oldScroll<(n=e.offset)&&n<=r.newScroll){return l.push(e)}else if(r.newScroll<(i=e.offset)&&i<=r.oldScroll){return l.push(e)}});l.sort(function(t,e){return t.offset-e.offset});if(!o){l.reverse()}return n.each(l,function(t,e){if(e.options.continuous||t===l.length-1){return e.trigger([i])}})});return this.oldScroll={x:t.horizontal.newScroll,y:t.vertical.newScroll}};t.prototype.refresh=function(){var t,e,r,i=this;r=n.isWindow(this.element);e=this.$element.offset();this.doScroll();t={horizontal:{contextOffset:r?0:e.left,contextScroll:r?0:this.oldScroll.x,contextDimension:this.$element.width(),oldScroll:this.oldScroll.x,forward:"right",backward:"left",offsetProp:"left"},vertical:{contextOffset:r?0:e.top,contextScroll:r?0:this.oldScroll.y,contextDimension:r?n[m]("viewportHeight"):this.$element.height(),oldScroll:this.oldScroll.y,forward:"down",backward:"up",offsetProp:"top"}};return n.each(t,function(t,e){return n.each(i.waypoints[t],function(t,r){var i,o,l,s,f;i=r.options.offset;l=r.offset;o=n.isWindow(r.element)?0:r.$element.offset()[e.offsetProp];if(n.isFunction(i)){i=i.apply(r.element)}else if(typeof i==="string"){i=parseFloat(i);if(r.options.offset.indexOf("%")>-1){i=Math.ceil(e.contextDimension*i/100)}}r.offset=o-e.contextOffset+e.contextScroll-i;if(r.options.onlyOnScroll&&l!=null||!r.enabled){return}if(l!==null&&l<(s=e.oldScroll)&&s<=r.offset){return r.trigger([e.backward])}else if(l!==null&&l>(f=e.oldScroll)&&f>=r.offset){return r.trigger([e.forward])}else if(l===null&&e.oldScroll>=r.offset){return r.trigger([e.forward])}})})};t.prototype.checkEmpty=function(){if(n.isEmptyObject(this.waypoints.horizontal)&&n.isEmptyObject(this.waypoints.vertical)){this.$element.unbind([p,y].join(" "));return delete c[this.id]}};return t}();l=function(){function t(t,e,r){var i,o;if(r.offset==="bottom-in-view"){r.offset=function(){var t;t=n[m]("viewportHeight");if(!n.isWindow(e.element)){t=e.$element.height()}return t-n(this).outerHeight()}}this.$element=t;this.element=t[0];this.axis=r.horizontal?"horizontal":"vertical";this.callback=r.handler;this.context=e;this.enabled=r.enabled;this.id="waypoints"+v++;this.offset=null;this.options=r;e.waypoints[this.axis][this.id]=this;s[this.axis][this.id]=this;i=(o=this.element[w])!=null?o:[];i.push(this.id);this.element[w]=i}t.prototype.trigger=function(t){if(!this.enabled){return}if(this.callback!=null){this.callback.apply(this.element,t)}if(this.options.triggerOnce){return this.destroy()}};t.prototype.disable=function(){return this.enabled=false};t.prototype.enable=function(){this.context.refresh();return this.enabled=true};t.prototype.destroy=function(){delete s[this.axis][this.id];delete this.context.waypoints[this.axis][this.id];return this.context.checkEmpty()};t.getWaypointsByElement=function(t){var e,r;r=t[w];if(!r){return[]}e=n.extend({},s.horizontal,s.vertical);return n.map(r,function(t){return e[t]})};return t}();d={init:function(t,e){var r;e=n.extend({},n.fn[g].defaults,e);if((r=e.handler)==null){e.handler=t}this.each(function(){var t,r,i,s;t=n(this);i=(s=e.context)!=null?s:n.fn[g].defaults.context;if(!n.isWindow(i)){i=t.closest(i)}i=n(i);r=c[i[0][u]];if(!r){r=new o(i)}return new l(t,r,e)});n[m]("refresh");return this},disable:function(){return d._invoke.call(this,"disable")},enable:function(){return d._invoke.call(this,"enable")},destroy:function(){return d._invoke.call(this,"destroy")},prev:function(t,e){return d._traverse.call(this,t,e,function(t,e,n){if(e>0){return t.push(n[e-1])}})},next:function(t,e){return d._traverse.call(this,t,e,function(t,e,n){if(e<n.length-1){return t.push(n[e+1])}})},_traverse:function(t,e,i){var o,l;if(t==null){t="vertical"}if(e==null){e=r}l=h.aggregate(e);o=[];this.each(function(){var e;e=n.inArray(this,l[t]);return i(o,e,l[t])});return this.pushStack(o)},_invoke:function(t){this.each(function(){var e;e=l.getWaypointsByElement(this);return n.each(e,function(e,n){n[t]();return true})});return this}};n.fn[g]=function(){var t,r;r=arguments[0],t=2<=arguments.length?e.call(arguments,1):[];if(d[r]){return d[r].apply(this,t)}else if(n.isFunction(r)){return d.init.apply(this,arguments)}else if(n.isPlainObject(r)){return d.init.apply(this,[null,r])}else if(!r){return n.error("jQuery Waypoints needs a callback function or handler option.")}else{return n.error("The "+r+" method does not exist in jQuery Waypoints.")}};n.fn[g].defaults={context:r,continuous:true,enabled:true,horizontal:false,offset:0,triggerOnce:false};h={refresh:function(){return n.each(c,function(t,e){return e.refresh()})},viewportHeight:function(){var t;return(t=r.innerHeight)!=null?t:i.height()},aggregate:function(t){var e,r,i;e=s;if(t){e=(i=c[n(t)[0][u]])!=null?i.waypoints:void 0}if(!e){return[]}r={horizontal:[],vertical:[]};n.each(r,function(t,i){n.each(e[t],function(t,e){return i.push(e)});i.sort(function(t,e){return t.offset-e.offset});r[t]=n.map(i,function(t){return t.element});return r[t]=n.unique(r[t])});return r},above:function(t){if(t==null){t=r}return h._filter(t,"vertical",function(t,e){return e.offset<=t.oldScroll.y})},below:function(t){if(t==null){t=r}return h._filter(t,"vertical",function(t,e){return e.offset>t.oldScroll.y})},left:function(t){if(t==null){t=r}return h._filter(t,"horizontal",function(t,e){return e.offset<=t.oldScroll.x})},right:function(t){if(t==null){t=r}return h._filter(t,"horizontal",function(t,e){return e.offset>t.oldScroll.x})},enable:function(){return h._invoke("enable")},disable:function(){return h._invoke("disable")},destroy:function(){return h._invoke("destroy")},extendFn:function(t,e){return d[t]=e},_invoke:function(t){var e;e=n.extend({},s.vertical,s.horizontal);return n.each(e,function(e,n){n[t]();return true})},_filter:function(t,e,r){var i,o;i=c[n(t)[0][u]];if(!i){return[]}o=[];n.each(i.waypoints[e],function(t,e){if(r(i,e)){return o.push(e)}});o.sort(function(t,e){return t.offset-e.offset});return n.map(o,function(t){return t.element})}};n[m]=function(){var t,n;n=arguments[0],t=2<=arguments.length?e.call(arguments,1):[];if(h[n]){return h[n].apply(null,t)}else{return h.aggregate.call(null,n)}};n[m].settings={resizeThrottle:100,scrollThrottle:30};return i.on("load.waypoints",function(){return n[m]("refresh")})})}).call(this);
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+var using_nav = false
+var bt_hide = jQuery('.bt_hide');
+jQuery(function(){
+    jQuery('.smooth_scroll').click(function(){
+        using_nav =true;
+    jQuery('html, body').animate({
+        scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
+    }, 500, function(){using_nav =false; console.log('finished');})
+    return false;
+});
+    ttip('#wrapper');
+    var lookbook_nav = jQuery('#lookbook_nav');
+    var lookbook_nav_height = 0; 
+
+    var clicked_on_hide=false;
+    var force_hide_nav = false;
+    bt_hide.on('click',function(){
+        clicked_on_hide=true;
+            if(force_hide_nav){
+                force_hide_nav=false;
+                lookbook_nav.css('bottom',0)
+                this.innerHTML = 'Hide';
+            }
+            else{
+                force_hide_nav=true;
+                lookbook_nav_height = lookbook_nav.height()*-1;
+                lookbook_nav.css('bottom',lookbook_nav_height)
+                this.innerHTML = 'See all the looks';
+            }
+    })
+
+    jQuery('.look').waypoint(function(direction) {
+    if(!clicked_on_hide && !using_nav){
+        if(direction=='down'){
+
+            lookbook_nav.css('bottom',0)
+            bt_hide.text('Hide');
+
+        }
+        else{
+            lookbook_nav_height = lookbook_nav.height()*-1;
+            lookbook_nav.css('bottom',lookbook_nav_height)
+            bt_hide.text('See all the looks');
+
+            console.log(bt_hide);
+
+        }
+
+    }
+});
+
+});
+
+</script>
+
+<script>
+function ttip(container) {
+    var tooltipClass = "ttip";
+    var sliderWidth = 960;
+
+    var sliderOffset = jQuery(container).offset();
+    jQuery("map area").each(function (i) {
+        var tooltip;
+        var mapArea = jQuery(this);
+        var mapAreaAltTxt = jQuery.trim(mapArea.attr('alt'));
+        if (mapAreaAltTxt !== "") {
+            jQuery("body").append("<div class='" + tooltipClass + "' id='" + tooltipClass + i + "'><p>" + mapAreaAltTxt + "</p></div>");
+            tooltip = jQuery("#" + tooltipClass + i);
+            var tooltipWidth = tooltip.outerWidth();
+            var tooltipMaxX = sliderWidth - tooltipWidth - 15;
+
+            mapArea.mouseenter(function () {
+                tooltip.stop(true, true).css({
+                    display: "none"
+                }).fadeIn(200);
+            }).mousemove(function (myCursor) {
+                var cursorOffsetXPosition = myCursor.pageX - sliderOffset.left;
+                if (cursorOffsetXPosition > tooltipMaxX) {
+                    tooltip.css({
+                        left: tooltipMaxX + sliderOffset,
+                        top: myCursor.pageY+15
+                    });
+                } else {
+                    tooltip.css({
+                        left: myCursor.pageX,
+                        top: myCursor.pageY+15
+                    });
+                }
+
+            }).mouseleave(function () {
+                tooltip.fadeOut(0);
+            });
+        }
+        mapArea.attr('title', '');
+    });
+}
+
+
+
+</script>
+</div><!-- end cms-content div -->
+
