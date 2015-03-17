@@ -63,7 +63,7 @@ table {
 	border-spacing: 0;
 }
 /*remove admin bar*/
-#wpadminbar{top:-50000px!important;}
+#wpadminbar{display: none}
 
 /*fonts*/
 @font-face {
@@ -497,11 +497,9 @@ height: 63px;margin: 0 0.25em;}
 
 /*-------------------------Slick/* Slider */
 
-.loadingtrail {  width: 24px;  height: 24px;}
-.loadingtrail:before {  display: block;  width: 22px;  height: 22px;  border-top: 2px solid #616161;  border-right: 2px solid #FFF;  content: "";  
--webkit-animation: spin 1s linear infinite;  animation: spin 1s linear infinite;
-  border-radius: 100%;
-}
+/*.loadingtrail {  width: 24px;  height: 24px;}*/
+.slick-list:before {  display: block;  width: 22px;  height: 22px;  border-top: 2px solid #616161;  border-right: 2px solid #FFF;  content: ""; position: absolute;top:45%; left:49%;  
+-webkit-animation: spin 1s linear infinite;  animation: spin 1s linear infinite;border-radius: 100%;}
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -522,6 +520,10 @@ height: 63px;margin: 0 0.25em;}
 }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; margin-bottom: 30px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: none; touch-action: none;}
+
+/*css spinner
+.slick-list:before {content:"Loading"; display:block; width:20px; height: 20px; position: absolute;top:50%; left:50%; z-index: 1}
+*/
 .slick-list:focus { outline: none; }
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0px; padding: 0px; }
 .slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
