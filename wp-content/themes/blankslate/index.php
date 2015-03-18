@@ -132,7 +132,7 @@ wp_nav_menu( $defaults );
                         <li><a href="https://www.facebook.com/josephineleung106?ref=tn_tnmn" class="f"></a></li>
                         <li><a href="https://twitter.com/josephineleung1" class="t"></a></li>
                         <li><a href="http://www.linkedin.com/pub/josephine-leung/30/610/b3a" class="l"></a></li>
-                        <li><a href="https://plus.google.com/u/0/117171332891237752117/posts" class="p"></a></li>
+                        <li><a href="https://www.pinterest.com/josephineleung1/" class="p"></a></li>
                     </ul>
 
                 </div>
