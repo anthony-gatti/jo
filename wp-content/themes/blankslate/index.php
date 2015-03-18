@@ -48,7 +48,7 @@ wp_nav_menu( $defaults );
                 while ($test->have_posts()) : $test->the_post(); ?>
                     <h1><?php the_title(); ?></h1>    
                     <?php the_content();?>
-                    <a class="download_link">Download CV</a>
+                    <a class="download_link" href="/?page_id=2">View CV</a>
                     <a class="view_cv" href="/?page_id=2">View CV</a>
             <?php endwhile;?>
 
