@@ -6,7 +6,7 @@
 <title><?php wp_title( ' | ', true, 'right' ); ?></title>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-<link rel="icon" type="image/gif" href="img/logo.gif" />
+<link rel="icon" type="image/gif" href="/wp-content/themes/blankslate/img/logo.gif" />
 <style type=text/css>
 @media only screen and (max-width : 1024px){
 .scroll_to_explore {background: url("img/tiny_UI_sprite.gif");background-position: -39px -599px;
